@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+   body {
+    background-color: khaki;
+    padding: 15px;
+  }
+  .titulos {
+    text-align: center;
+    color: darkred;
+  }
+  .respuesta {
+    background-color: rgb(195, 208, 152);
+    color: black;
+    padding: 16px;
+    text-align: center;
+    font-size: 20px;
+    margin: 5px;
+  }
+  input[type="text"] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: burlywood;
+  }
+  button {
+    background-color: brown;
+    color: azure;
+    font-size: 16px;
+    padding: 10px;
+  }
+  </style>
+<body>
+    <div class="row mt-3">
+        <div class="col-md-6">
+          <a href="index.html" class="btn btn-primary">Inicio</a>
+        </div>
+    </div>
+    <h1>Indice de masa corporal</h1>
+    
+    <label for="n1">Peso(en kg)</label>
+    <input type="text" id="n1" />
+
+    <label for="n2">Altura(en metros)</label>
+    <input type="text" id="n2" />
+
+    <button onclick="imc()">IMC</button>
+    <h2>Respuesta</h2>
+    <p id="res" class="respuesta"></p>
+
+    <script src="js/imc.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
